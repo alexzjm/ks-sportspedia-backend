@@ -11,7 +11,7 @@ dotenv_1.default.config();
 const prisma = new prisma_1.PrismaClient();
 const app = (0, express_1.default)();
 // app.use(cors({ origin: 'http://localhost:5173' })); // for development
-app.use((0, cors_1.default)({ origin: 'https://ks-sportspedia-frontend.vercel.app/' })); // for deployment
+app.use((0, cors_1.default)({ origin: 'https://ks-sportspedia-frontend.vercel.app' })); // for deployment
 app.use(express_1.default.json());
 app.get('/api/ping', async (_req, res) => {
     try {

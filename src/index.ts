@@ -8,7 +8,7 @@ dotenv.config();
 const prisma = new PrismaClient();
 const app = express();
 // app.use(cors({ origin: 'http://localhost:5173' })); // for development
-app.use(cors({ origin: 'https://ks-sportspedia-frontend.vercel.app/'})) // for deployment
+app.use(cors({ origin: 'https://ks-sportspedia-frontend.vercel.app'})) // for deployment
 app.use(express.json());
 
 app.get('/api/ping', async (_req: Request, res: Response): Promise<void> => {
